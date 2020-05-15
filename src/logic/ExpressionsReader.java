@@ -19,7 +19,7 @@ public class ExpressionsReader {
         ){
             String nextLine = null;
             while ((nextLine = reader.readLine()) != null) {
-                EvaluateExpression.CalculateExpressions(nextLine);
+                EvaluateExpression.calculateAndPrint(nextLine);
             }
         } catch(IOException e){
             e.printStackTrace();
